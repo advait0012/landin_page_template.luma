@@ -43,6 +43,18 @@ nav a {
   padding: 7px;
 }
 
+nav a:link {
+  margin-right: -15px;
+}
+
+nav svg{
+  margin: 10px;
+}
+
+header nav svg:hover{
+  transform:translate(2px,-2px)
+}
+
 nav button {
   padding: 5px;
   border-radius: 20px;
@@ -61,6 +73,10 @@ nav button:hover {
 nav a {
   text-decoration: none;
   color: #fff;
+}
+
+nav svg{
+  margin: 10px;
 }
 
 header svg {
