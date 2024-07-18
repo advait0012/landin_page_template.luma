@@ -1,3 +1,11 @@
+@import url(utility.css);
+
+
+
+:root{
+  --white:rgba(255,255,255,0.5);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,18 +30,12 @@ a {
   text-decoration: none;
 }
 
-.flex {
-  display: flex;
-}
-
-header {
-  justify-content: space-between;
-}
 
 nav p,
-nav a,
+nav a:link,
 nav button {
   margin: 5px;
+  color: var(--white);
 }
 
 nav p,
@@ -63,7 +65,14 @@ nav a {
 
 header svg {
   height: 20px;
+  color: rgba(255, 255, 255, 0.212);
+  transition: 1s;
+  cursor: pointer;
+}
+
+header svg:hover{
   color: white;
+  transform: scale(1.2);
 }
 
 .left {
@@ -73,6 +82,7 @@ header svg {
   flex-direction: column;
   gap: 20px;
   margin: 10% 0 10% 10%;
+  /* justify-content: center; */
 }
 
 .left svg {
@@ -80,12 +90,12 @@ header svg {
   color: rgba(255, 255, 255, 0.534);
 }
 
-.left h1,
-.left p {
+ .left p {
   font-weight: 400;
 }
 
 .left h1 {
+  font-weight: 600;
   font-size: 50px;
   line-height: 1;
 }
@@ -114,6 +124,7 @@ header svg {
   border-radius: 10px;
   font-weight: 600;
   font-size: 20px;
+  border: none;
 }
 
 .right {
@@ -132,7 +143,7 @@ footer {
 
 footer .primary {
   color: #ffffff29;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 25px;
 }
 
@@ -156,3 +167,5 @@ footer .secondary a{
 .secondary a {
   margin: 10px;
 }
+
+
