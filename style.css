@@ -75,6 +75,13 @@ header svg:hover{
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 650px) {
+  header p{
+    display: none;
+  }
+  
+}
+
 .left {
   flex-basis: 40%;
   display: flex;
@@ -127,12 +134,29 @@ header svg:hover{
   border: none;
 }
 
+@media screen and (max-width:757px) {
+  .left{
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+}
+
 .right {
   flex-basis: 60%;
 }
 
 .right video {
   width: 100%;
+}
+
+@media screen and (max-width:757px) {
+  main{
+    flex-direction: column;
+    gap:30px;
+  }
+  
 }
 
 footer {
@@ -143,8 +167,8 @@ footer {
 
 footer .primary {
   color: #ffffff29;
-  /* justify-content: space-between; */
   margin-bottom: 25px;
+  /* flex-wrap: wrap; */
 }
 
 .text_links a {
