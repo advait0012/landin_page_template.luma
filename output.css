@@ -1,0 +1,253 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url(utility.css);
+
+
+
+:root{
+  --white:rgba(255,255,255,0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inter;
+}
+
+body {
+  background: #20394d;
+  background: -o-linear-gradient(315deg, #20394d, #321112);
+  background: linear-gradient(135deg, #20394d, #321112);
+  color: #fff;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+nav p,
+nav a:link,
+nav button {
+  margin: 5px;
+  color: var(--white);
+}
+
+nav p,
+nav a {
+  padding: 7px;
+}
+
+nav a:link {
+  margin-right: -15px;
+}
+
+nav svg{
+  margin: 10px;
+}
+
+header nav svg:hover{
+  -webkit-transform:translate(2px,-2px);
+      -ms-transform:translate(2px,-2px);
+          transform:translate(2px,-2px)
+}
+
+nav button {
+  padding: 5px;
+  border-radius: 20px;
+  height: 30px;
+  font-weight: 700;
+  border: none;
+  color: rgba(255, 255, 255, 0.532);
+  background-color: rgba(255, 255, 255, 0.327);
+}
+
+nav button:hover {
+  background-color: #ffffff96;
+  color: #00000095;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav svg{
+  margin: 10px;
+}
+
+header svg {
+  height: 20px;
+  color: rgba(255, 255, 255, 0.212);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+header svg:hover{
+  color: white;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 650px) {
+  header p{
+    display: none;
+  }
+  
+}
+
+.left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin: 10% 0 10% 10%;
+  /* justify-content: center; */
+}
+
+.left svg {
+  height: 30px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+ .left p {
+  font-weight: 400;
+}
+
+.left h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.left p {
+  font-size: 25px;
+}
+
+.left span {
+  background: -o-radial-gradient(
+    top left,
+    circle,
+    #099ef1 0%,
+    #6863f8 18.82%,
+    #d84ffa 32.6%,
+    #f058c5 52.83%,
+    #ff4f90 68.03%,
+    #ff6558 87.66%,
+    #ff891f 100%
+  );
+  background: radial-gradient(
+    circle at top left,
+    #099ef1 0%,
+    #6863f8 18.82%,
+    #d84ffa 32.6%,
+    #f058c5 52.83%,
+    #ff4f90 68.03%,
+    #ff6558 87.66%,
+    #ff891f 100%
+  );
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+}
+
+@media screen and (max-width:757px) {
+  .left{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+  }
+  
+}
+
+.right {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.right video {
+  width: 100%;
+}
+
+@media screen and (max-width:757px) {
+  main{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap:30px;
+  }
+  
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.216);
+  width: 70%;
+  margin-left: 15%;
+}
+
+footer .primary {
+  color: #ffffff29;
+  margin-bottom: 25px;
+  /* flex-wrap: wrap; */
+}
+
+.text_links a {
+  margin: 10px;
+}
+
+.text_links a svg {
+  width: 50px;
+}
+
+.icon_links a {
+  margin: 10px;
+}
+
+footer .secondary a{
+    color: rgba(255, 255, 255, 0.247);
+    font-size: 15px;
+}
+
+.secondary a {
+  margin: 10px;
+}
+
